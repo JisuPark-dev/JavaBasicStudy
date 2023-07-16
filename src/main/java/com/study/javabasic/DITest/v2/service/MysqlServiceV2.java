@@ -1,11 +1,9 @@
 package com.study.javabasic.DITest.v2.service;
 
-import org.springframework.stereotype.Service;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
 
-@Service
-public class MysqlServiceV2 implements DatabaseService{
-    @Override
-    public void execute() {
-        System.out.println("MysqlService.execute");
-    }
+
+public class MysqlServiceV2  {
+
 }

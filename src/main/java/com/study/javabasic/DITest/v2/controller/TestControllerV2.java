@@ -1,6 +1,6 @@
 package com.study.javabasic.DITest.v2.controller;
 
-import com.study.javabasic.DITest.v2.service.DatabaseService;
+import com.study.javabasic.DITest.v2.service.DatabaseServiceV2;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -8,15 +8,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 //@RequiredArgsConstructor
 public class TestControllerV2 {
     //final
-    private DatabaseService databaseService;
-    public TestControllerV2(DatabaseService databaseService) {
-        this.databaseService = databaseService;
+    private DatabaseServiceV2 databaseServiceV2;
+    public TestControllerV2(DatabaseServiceV2 databaseServiceV2) {
+        this.databaseServiceV2 = databaseServiceV2;
     }
 
 
     @GetMapping("test/v2")
     public String test() {
-        databaseService.execute();
+        databaseServiceV2.execute();
         return "ok";
     }
 }
