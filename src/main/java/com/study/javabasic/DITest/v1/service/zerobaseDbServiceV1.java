@@ -1,12 +1,12 @@
-package com.study.javabasic.DITest.service;
+package com.study.javabasic.DITest.v1.service;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 @Service
 @Primary
-public class zerobaseDbService implements DatabaseService{
-    @Override
+public class zerobaseDbServiceV1 {
+
     public void execute() {
         System.out.println("zerobaseDbService.execute");
     }

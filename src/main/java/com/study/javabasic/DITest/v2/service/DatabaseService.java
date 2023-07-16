@@ -1,4 +1,4 @@
-package com.study.javabasic.DITest.service;
+package com.study.javabasic.DITest.v2.service;
 
 public interface DatabaseService {
     void execute();
