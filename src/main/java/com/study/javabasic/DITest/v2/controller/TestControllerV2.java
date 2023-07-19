@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 //@RequiredArgsConstructor
 public class TestControllerV2 {
     //final
-    private DatabaseServiceV2 databaseServiceV2;
+    private final DatabaseServiceV2 databaseServiceV2;
     public TestControllerV2(DatabaseServiceV2 databaseServiceV2) {
         this.databaseServiceV2 = databaseServiceV2;
     }
